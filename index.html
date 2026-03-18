@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GROVE — Farm-to-Table Restaurant</title>
+  <meta name="description" content="GROVE — Seasonal farm-to-table dining in the heart of the city." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Jost:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <nav id="nav">
+    <div class="nav-left"><a href="#menu">Menu</a><a href="#about">Our Story</a></div>
+    <a href="#" class="nav-logo">GROVE</a>
+    <div class="nav-right"><a href="#contact">Find Us</a><a href="#reserve" class="nav-reserve">Reserve a Table</a></div>
+    <button class="nav-burger" id="navBurger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mm-nav">
+      <a href="#menu" class="mm-link">Menu</a>
+      <a href="#about" class="mm-link">Our Story</a>
+      <a href="#contact" class="mm-link">Find Us</a>
+    </nav>
+    <a href="#reserve" class="mm-reserve">Reserve a Table</a>
+  </div>
+
+  <section id="hero">
+    <div class="hero-bg"><div class="hb-1"></div><div class="hb-overlay"></div></div>
+    <div class="hero-content">
+      <div class="hero-season"><span class="hs-line"></span><span>Spring Menu — Now Serving</span><span class="hs-line"></span></div>
+      <h1 class="hero-headline"><em>Rooted</em> in the<br>season.</h1>
+      <p class="hero-sub">Farm-to-table dining where every dish tells the story of the land it came from. Seasonal menus. Local farmers. Honest food.</p>
+      <div class="hero-actions">
+        <a href="#reserve" class="btn-grove">Reserve a Table</a>
+        <a href="#menu" class="btn-text">View Menu &darr;</a>
+      </div>
+    </div>
+    <div class="hero-info-bar">
+      <div class="hib-item"><span class="hib-label">Open</span><span class="hib-val">Tue–Sun, 5pm–11pm</span></div>
+      <div class="hib-sep"></div>
+      <div class="hib-item"><span class="hib-label">Location</span><span class="hib-val">34 Orchard St, New York</span></div>
+      <div class="hib-sep"></div>
+      <div class="hib-item"><span class="hib-label">Reservations</span><span class="hib-val">+1 212 555 0174</span></div>
+      <div class="hib-sep"></div>
+      <div class="hib-item"><span class="hib-label">Dress Code</span><span class="hib-val">Smart Casual</span></div>
+    </div>
+  </section>
+
+  <div class="intro-band">
+    <div class="ib-inner">
+      <p>Sourced within <strong>100 miles.</strong> Harvested at <strong>peak season.</strong> Cooked with <strong>nothing to hide.</strong></p>
+    </div>
+  </div>
+
+  <section id="menu">
+    <div class="menu-wrap">
+      <div class="menu-header">
+        <div><span class="label-serif-sm">The Menu</span><h2 class="section-serif">Spring <em>Selections</em></h2></div>
+        <div class="menu-tabs" id="menuTabs">
+          <button class="mt-btn active" data-tab="starters">Starters</button>
+          <button class="mt-btn" data-tab="mains">Mains</button>
+          <button class="mt-btn" data-tab="desserts">Desserts</button>
+          <button class="mt-btn" data-tab="drinks">Drinks</button>
+        </div>
+      </div>
+      <div class="menu-panels">
+        <div class="menu-panel active" id="tab-starters">
+          <div class="menu-item"><div class="mi-left"><h4>Roasted Beet &amp; Burrata</h4><p>Chioggia beets, fresh burrata, pistachio dust, aged balsamic, microgreens</p><span class="mi-tag">Vegetarian</span></div><span class="mi-price">$18</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>Smoked Duck Liver Mousse</h4><p>Sourdough crostini, pickled cherry, grain mustard, duck fat crumb</p></div><span class="mi-price">$22</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>Spring Pea &amp; Mint Soup</h4><p>Jersey peas, crème fraîche, lemon oil, garden mint, crispy shallots</p><span class="mi-tag">Vegan</span></div><span class="mi-price">$16</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>Tuna Crudo</h4><p>Yellowfin tuna, radish, cucumber water, sesame, citrus ponzu</p><span class="mi-tag">Gluten Free</span></div><span class="mi-price">$24</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>Charred Leek &amp; Goat Cheese</h4><p>Slow-roasted leeks, whipped chèvre, walnut vinaigrette, crispy capers</p><span class="mi-tag">Vegetarian</span></div><span class="mi-price">$19</span></div>
+        </div>
+        <div class="menu-panel" id="tab-mains">
+          <div class="menu-item menu-item-featured"><div class="mi-left"><h4>Dry-Aged Duck Breast <span class="mi-chef">Chef's Pick</span></h4><p>Hudson Valley duck, spring onion purée, morel mushrooms, duck jus, watercress</p></div><span class="mi-price">$48</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>Pan-Seared Halibut</h4><p>Pacific halibut, asparagus, champagne beurre blanc, caviar, lemon gel</p><span class="mi-tag">Gluten Free</span></div><span class="mi-price">$52</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>28-Day Aged Sirloin</h4><p>NY sirloin, bone marrow butter, heritage potato, roasted garlic, chimichurri</p></div><span class="mi-price">$58</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>Ricotta Gnudi</h4><p>Hand-rolled gnudi, spring truffle, brown butter, parmesan, fresh thyme</p><span class="mi-tag">Vegetarian</span></div><span class="mi-price">$34</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>Whole Roasted Chicken for Two</h4><p>Farm chicken, jus gras, seasonal vegetables, heritage grains — serves 2</p></div><span class="mi-price">$76</span></div>
+        </div>
+        <div class="menu-panel" id="tab-desserts">
+          <div class="menu-item"><div class="mi-left"><h4>Warm Valrhona Fondant</h4><p>70% dark chocolate, tonka bean ice cream, cocoa soil, gold leaf</p></div><span class="mi-price">$16</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>Strawberry Pavlova</h4><p>Seasonal strawberries, chantilly cream, rose water, freeze-dried fruit</p><span class="mi-tag">Gluten Free</span></div><span class="mi-price">$14</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>Affogato al Grove</h4><p>Vanilla bean gelato, house-roasted espresso, salted caramel crisp</p></div><span class="mi-price">$12</span></div>
+        </div>
+        <div class="menu-panel" id="tab-drinks">
+          <div class="menu-item"><div class="mi-left"><h4>Grove Negroni</h4><p>Hendrick's gin, house vermouth, Campari, orange peel, barrel-aged</p></div><span class="mi-price">$18</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>Natural Wine List</h4><p>20+ low-intervention wines by the glass — ask your server for today's selection</p></div><span class="mi-price">From $14</span></div>
+          <div class="menu-item"><div class="mi-left"><h4>Non-Alcoholic Pairings</h4><p>Seasonal shrubs, fermented sodas, and house-made botanicals</p><span class="mi-tag">N/A</span></div><span class="mi-price">From $9</span></div>
+        </div>
+      </div>
+      <div class="menu-footer">
+        <p>Full menus available on request. Dietary requirements accommodated with notice.</p>
+        <a href="#reserve" class="btn-grove">Book Your Table</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="gallery-strip">
+    <div class="gs-img gs-1"></div><div class="gs-img gs-2"></div><div class="gs-img gs-3"></div><div class="gs-img gs-4"></div><div class="gs-img gs-5"></div>
+  </div>
+
+  <section id="about">
+    <div class="about-wrap">
+      <div class="ab-visual">
+        <div class="ab-img-main"></div>
+        <div class="ab-quote-card">
+          <p>"We cook with what the season gives us. Not a menu decided in January — a menu written every morning."</p>
+          <span>— Chef Mateo Ruiz</span>
+        </div>
+      </div>
+      <div class="ab-text">
+        <span class="label-serif-sm">Our Story</span>
+        <h2 class="section-serif">Food that<br>knows where<br>it came from.</h2>
+        <div class="ab-body">
+          <p>GROVE opened in 2018 with one rule: nothing on the plate travels more than 100 miles to get there. What started as a constraint became a philosophy — and eventually, a kitchen connected to the land in a way most restaurants aren't.</p>
+          <p>Head chef Mateo Ruiz spent seven years in the Hudson Valley farming before he ever cooked professionally. That background shows in every dish. He doesn't just source from farms. He grows on them.</p>
+        </div>
+        <div class="ab-farmers">
+          <span class="label-serif-sm">Our Farmers</span>
+          <div class="farmer-list">
+            <div class="fl-item"><strong>Blue Hill Farm</strong><span>Hudson Valley — Vegetables &amp; Herbs</span></div>
+            <div class="fl-item"><strong>Quattro's Game Farm</strong><span>Pleasant Valley — Duck &amp; Poultry</span></div>
+            <div class="fl-item"><strong>Fishkill Farms</strong><span>Dutchess County — Stone Fruit</span></div>
+            <div class="fl-item"><strong>Wild Hive Farm</strong><span>Clinton Corners — Grains</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserve">
+    <div class="reserve-wrap">
+      <div class="rv-left">
+        <span class="label-serif-sm">Reservations</span>
+        <h2 class="section-serif">Join us for<br><em>dinner.</em></h2>
+        <p>We're open Tuesday through Sunday, 5pm to 11pm. Reservations recommended — walk-ins welcome at the bar.</p>
+        <div class="rv-contact">
+          <div class="rvc-item"><span class="label-serif-sm">Phone</span><a href="tel:+12125550174">+1 212 555 0174</a></div>
+          <div class="rvc-item"><span class="label-serif-sm">Email</span><a href="mailto:hello@grove-nyc.com">hello@grove-nyc.com</a></div>
+        </div>
+        <div class="rv-hours">
+          <div class="rvh-row"><span>Tue – Thu</span><span>5:00 – 10:30pm</span></div>
+          <div class="rvh-row"><span>Fri – Sat</span><span>5:00 – 11:00pm</span></div>
+          <div class="rvh-row"><span>Sunday</span><span>4:00 – 9:30pm</span></div>
+          <div class="rvh-row rvh-closed"><span>Monday</span><span>Closed</span></div>
+        </div>
+      </div>
+      <form class="reserve-form" id="reserveForm">
+        <h3>Make a Reservation</h3>
+        <div class="rf-row">
+          <div class="rf-group"><label>First Name</label><input type="text" placeholder="First name" /></div>
+          <div class="rf-group"><label>Last Name</label><input type="text" placeholder="Last name" /></div>
+        </div>
+        <div class="rf-row">
+          <div class="rf-group"><label>Date</label><input type="date" /></div>
+          <div class="rf-group"><label>Time</label><select><option value="">Select time</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></div>
+        </div>
+        <div class="rf-group"><label>Party Size</label><select><option value="">Number of guests</option><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option></select></div>
+        <div class="rf-group"><label>Email</label><input type="email" placeholder="you@email.com" /></div>
+        <div class="rf-group"><label>Special Requests</label><textarea rows="3" placeholder="Dietary requirements, allergies, celebrations..."></textarea></div>
+        <button type="submit" class="rf-submit">Request Reservation</button>
+        <p class="rf-note">Confirmation within 2 hours. Same-day bookings — call us directly.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="ft-brand"><div class="ft-logo">GROVE</div><p>Seasonal farm-to-table dining.<br>34 Orchard St, New York, NY 10002</p></div>
+        <div class="ft-nav"><a href="#menu">Menu</a><a href="#about">Our Story</a><a href="#reserve">Reservations</a></div>
+        <div class="ft-social"><span class="label-serif-sm">Follow</span><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 GROVE Restaurant. All rights reserved.</span>
+        <span>Template by <a href="#">KuberaLabz</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
